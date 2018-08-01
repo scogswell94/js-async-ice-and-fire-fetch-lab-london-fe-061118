@@ -1,6 +1,9 @@
 function fetchBooks() {
   //write fetch request to the Game of Thrones API
-  fetch('')
+  
+  fetch('https://api.github.com/users/dougienewman').then(response => {
+console.log(response.json())})
+
 }
 
 function renderBooks(json) {
